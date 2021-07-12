@@ -45,7 +45,7 @@ main {
 
 
 .container {
-    padding: 10rem 15rem;
+    padding: 10rem 2rem;
     max-width: 70rem;
     margin: 0 auto;
 }
@@ -62,6 +62,7 @@ h1 {
 
 .cards-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     grid-gap: 2rem;
