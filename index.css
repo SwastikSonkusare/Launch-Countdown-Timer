@@ -83,23 +83,27 @@ h1 {
     opacity: .5;
 }
 
-.days-value,
-.hours-value,
-.minutes-value,
-.seconds-value {
+.days-value-container,
+.hours-value-container,
+.minutes-value-container,
+.seconds-value-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius: 5px;
     padding: 2rem 2.8rem;
     box-shadow: 0 .6rem 0 rgba(0, 0, 0, 0.2);
     background-color: var(--dark-desaturated-blue);
     margin-bottom: 2rem;
+    width: 12rem;
 }
 
 
-.days-value small,
-.hours-value small,
-.minutes-value small,
-.seconds-value small {
+.days-value-container small,
+.hours-value-container small,
+.minutes-value-container small,
+.seconds-value-container small {
     font-size: 4.8rem;
     color: var(--soft-red);
 }
