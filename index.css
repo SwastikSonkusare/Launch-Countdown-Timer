@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --dark-desaturated-blue: hsl(236, 21%, 26%);
+    --very-dark-blue-primary: hsl(235, 16%, 14%);
+    --very-dark-blue-secondary: hsl(234, 17%, 12%); 
+    --grayish-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+}
+
+
+
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;       /*1rem = 10px*/
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Red Hat Text', sans-serif;
+    box-sizing: border-box;
+
+    background-color: var(--very-dark-blue-secondary);
+    background-image: url(./images/bg-stars.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.container {
+    padding: 10rem 15rem;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: .7rem;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card span {
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    opacity: .5;
+}
+
+.days-value,
+.hours-value,
+.minutes-value,
+.seconds-value {
+    border: none;
+    border-radius: 5px;
+    padding: 2rem 2.8rem;
+    box-shadow: 0 .6rem 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--dark-desaturated-blue);
+    margin-bottom: 2rem;
+}
+
+
+.days-value small,
+.hours-value small,
+.minutes-value small,
+.seconds-value small {
+    font-size: 4.8rem;
+    color: var(--soft-red);
+}
+
+
+footer {
+    margin-top: auto;
+    background-image: url(./images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+    padding: 7rem;
+    text-align: center;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+/* .icons img  */
