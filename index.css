@@ -87,18 +87,49 @@ h1 {
 .hours-value-container,
 .minutes-value-container,
 .seconds-value-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     border-radius: 5px;
-    padding: 2rem 2.8rem;
+    padding: 2.5rem;
     box-shadow: 0 .6rem 0 rgba(0, 0, 0, 0.2);
     background-color: var(--dark-desaturated-blue);
     margin-bottom: 2rem;
     width: 12rem;
 }
 
+.days-value-container::before,
+.hours-value-container::before,
+.minutes-value-container::before,
+.seconds-value-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(-19%, -50%) rotate(90deg);
+    height: 4px;
+    width: 6px;
+    border-radius: 150px 150px 0 0;
+    background-color: black;
+}
+
+
+.days-value-container::after,
+.hours-value-container::after,
+.minutes-value-container::after,
+.seconds-value-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(10%, -50%) rotate(-90deg);
+    height: 4px;
+    width: 6px;
+    border-radius: 150px 150px 0 0;
+    background-color: black;
+}
 
 .days-value-container small,
 .hours-value-container small,
