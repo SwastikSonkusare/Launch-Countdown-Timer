@@ -19,6 +19,7 @@ const countDown = () => {
     document.querySelector(".hours-value").innerText = textHour;
     document.querySelector(".minutes-value").innerText = textMinute;
     document.querySelector(".seconds-value").innerText = textSecond;
+    
 }
 
 setInterval(countDown, 1000);
